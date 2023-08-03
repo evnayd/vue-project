@@ -8,7 +8,7 @@
         :key="item.id"
         class="item"
       >
-        <h2 class="piece__name">{{ item.name }}</h2>
+        <h2>{{ item.name }}</h2>
       </li>
     </ul>
   </div>

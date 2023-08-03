@@ -8,7 +8,7 @@
         v-for="item in usersStuff"
         :key="item.id"
       >
-        <h2 class="item__name">{{ item.name }}</h2>
+        <h2>{{ item.name }}</h2>
       </li>
     </ul>
   </div>
@@ -24,13 +24,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.items__list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-}
-</style>

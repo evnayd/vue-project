@@ -2,7 +2,7 @@
   <div class="box">
     <h1 class="box__title">Chosen clothes:</h1>
     <div v-if="chosenClothes.name" class="item chosen-item">
-      <h2 class="item__name">{{ chosenClothes.name }}</h2>
+      <h2>{{ chosenClothes.name }}</h2>
     </div>
   </div>
 </template>
