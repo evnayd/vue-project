@@ -122,7 +122,6 @@ export default {
   },
   methods: {
     handleChosenUserItem(item) {
-      console.log("item user", item);
       let newarr = JSON.parse(JSON.stringify(this.chosenUsersStuff));
       if (!newarr.some((itm) => itm.id === item.id) && this.canAddItem) {
         newarr.push(item);
@@ -140,16 +139,18 @@ export default {
 </script>
 
 <style scoped>
-.upper-block {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
-  padding: 20px;
-}
+@media (min-width: 1024px) {
+  .upper-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 20px;
+  }
 
-.lower-block {
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
+  .lower-block {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 </style>
